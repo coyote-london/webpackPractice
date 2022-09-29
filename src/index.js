@@ -1,8 +1,6 @@
 import _ from 'lodash';
-import './style.css';
-import Mercury from './mercury.jpg';
-import Data from './data.xml';
-import Notes from './data.csv';
+import Mercury from 'mercury.jpg';
+
 
 function component() {
     const element = document.createElement('div');
@@ -14,9 +12,7 @@ function component() {
     img.src = Mercury;
     
     element.appendChild(img);
-
-    console.log(Data);
-    console.log(Notes);
+;
   
     return element;
   }
