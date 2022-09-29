@@ -1,17 +1,16 @@
 import _ from 'lodash';
-import Mercury from 'mercury.jpg';
+import printMe from './print.js';
 
 
 function component() {
     const element = document.createElement('div');
+    const buttonElement = document.createElement('button')
   
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    const img = new Image();
-    img.src = Mercury;
+    buttonElement.innerHTML = 'Click me and check the console';    
+    buttonElement.onclick = printMe;
     
-    element.appendChild(img);
+    element.appendChild(buttonElement);
 ;
   
     return element;
